@@ -41,15 +41,21 @@ a {
   color: white;
   text-align: center;
   min-height: 85vh;
-  position: relative;
-  top: 15%;
 }
 #hero .inner .copy * {
   width: 75%;
 }
+#hero .inner .copy * {
+  position: relative;
+  top: 25%;
+}
+@media screen and (max-width: 720px) {
+  #hero .inner .copy * {
+    top: 0;
+  }
+}
 @media screen and (max-width: 720px) {
   #hero .inner .copy {
-    top: 0;
     margin-bottom: 20px;
   }
 }

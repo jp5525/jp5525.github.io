@@ -48,11 +48,16 @@ a{
             width: 75%;
         }
 
-        position: relative;
-        top: 15%;
+        *{
+            position: relative;
+            top: 25% ;
+
+            @media screen and  (max-width: 720px) {
+                top: 0;
+            }
+        }
 
         @media screen and  (max-width: 720px) {
-            top: 0;
             margin-bottom: 20px;
         }
     }

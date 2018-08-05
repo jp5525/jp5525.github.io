@@ -50,6 +50,7 @@ a {
 @media screen and (max-width: 720px) {
   #hero .inner .copy {
     top: 0;
+    margin-bottom: 100px;
   }
 }
 #hero .inner #header {
@@ -115,6 +116,7 @@ a {
     text-align: center;
     width: inherit;
     display: block;
+    margin-left: 0px;
   }
 }
 

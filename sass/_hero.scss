@@ -53,12 +53,12 @@ a{
 
         @media screen and  (max-width: 720px) {
             top: 0;
-            margin-bottom: 100px;
+            margin-bottom: 20px;
         }
     }
 
     #header{
-        height: 15vh;
+        min-height: 15vh;
 
         display: flex;
         flex-direction: row;
@@ -86,11 +86,31 @@ a{
 
                 img{
                     width:250px;
-                }
             }
+
+            @media screen and  (max-width: 500px) {
+                display: none;
+            }
+        }
         }
     }
 
+    #small-store-btns{
+        
+        display: none;
+        @media screen and  (max-width: 500px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:50px;
+
+            z-index: 10;
+        }
+
+        img{
+            width:200px;
+        }
+    }
 }
 
     

@@ -50,11 +50,11 @@ a {
 @media screen and (max-width: 720px) {
   #hero .inner .copy {
     top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
 }
 #hero .inner #header {
-  height: 15vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -77,6 +77,26 @@ a {
 }
 #hero .inner #header .right a img {
   width: 250px;
+}
+@media screen and (max-width: 500px) {
+  #hero .inner #header .right a {
+    display: none;
+  }
+}
+#hero .inner #small-store-btns {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  #hero .inner #small-store-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    z-index: 10;
+  }
+}
+#hero .inner #small-store-btns img {
+  width: 200px;
 }
 
 #section-2 {

@@ -1,0 +1,94 @@
+html, body{
+    margin: 0px;
+    font-family: ubuntu;
+    overflow-x: hidden;
+}
+
+
+h1{
+    font-size: 48px;
+}
+p, a{
+    font-size: 32px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#hero{
+    position: relative;
+    svg{
+        position: absolute;
+        bottom: 0px;
+    }
+}
+#hero .inner{
+    height: 100vh;
+    background: linear-gradient(rgba(82,82,82,.87), rgba(82,82,82,.87)), url("./home-2.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    .copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        color: white;
+        text-align: center;
+        
+        height: 85vh;
+        *{
+            width: 75%;
+        }
+
+        position: relative;
+        top: 15%;
+
+        @media screen and  (max-width: 720px) {
+            top: 0;
+        }
+    }
+
+    #header{
+        height: 15vh;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        color: white;
+
+        .left{
+            margin-left: 35px;
+            display: flex;
+            flex-direction: row;
+
+            p{
+               position: relative;
+               top: 5px;
+               left: 15px;
+            }
+        }
+
+        .right{
+            a{
+                margin-right: 35px;
+                display: block;
+
+                img{
+                    width:250px;
+                }
+            }
+        }
+    }
+
+}
+
+    

@@ -98,6 +98,12 @@ a {
 #section-2 .left img {
   max-width: 300px;
 }
+@media screen and (max-width: 720px) {
+  #section-2 .left {
+    width: inherit;
+    display: block;
+  }
+}
 #section-2 .right {
   width: 50%;
   justify-content: center;
@@ -107,6 +113,8 @@ a {
 @media screen and (max-width: 720px) {
   #section-2 .right {
     text-align: center;
+    width: inherit;
+    display: block;
   }
 }
 
@@ -145,6 +153,12 @@ a {
 #section-4 #inner .right img {
   max-width: 300px;
 }
+@media screen and (max-width: 720px) {
+  #section-4 #inner .right {
+    width: inherit;
+    display: block;
+  }
+}
 #section-4 #inner .left {
   width: 50%;
   min-width: 350px;
@@ -152,6 +166,8 @@ a {
 @media screen and (max-width: 720px) {
   #section-4 #inner .left {
     text-align: center;
+    width: inherit;
+    display: block;
   }
 }
 #section-4 svg {

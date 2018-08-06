@@ -13,9 +13,9 @@
         color: white;
 
         .right{
-            width:30%;
+           // width:30%;
             z-index: 100;
-            display: flex;
+            //display: flex;
             img{
                 max-width: 300px;
             }
@@ -29,7 +29,7 @@
             width: 50%;
             min-width: 350px;
 
-            @media screen and  (max-width: 720px) {
+            @media screen and  (max-width: 1040px) {
                 text-align: center;
                 width: inherit;
                 display: block;

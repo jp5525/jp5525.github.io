@@ -10,12 +10,12 @@
 	
     color: white;
 
-    .left, .right{
-        display: flex;
-        justify-content: center
-    }
+   // .left, .right{
+        //display: flex;
+        //justify-content: center
+    //}
     .left{
-        width: 30%;
+      //  width: 30%;
         img{
             max-width: 300px ;
         }
@@ -33,7 +33,7 @@
         margin-left: 35px;
         min-width: 350px;
 
-        @media screen and  (max-width: 720px) {
+        @media screen and  (max-width: 1040px) {
             text-align: center;
             width: inherit;
             display: block;

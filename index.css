@@ -38,21 +38,21 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: white;
   text-align: center;
-  min-height: 85vh;
+  min-height: 100vh;
+  /**{
+      position: relative;
+      top: 25% ;
+
+      @media screen and  (max-width: 720px) {
+          top: 0;
+      }
+  }*/
 }
 #hero .inner .copy * {
   width: 75%;
-}
-#hero .inner .copy * {
-  position: relative;
-  top: 25%;
-}
-@media screen and (max-width: 720px) {
-  #hero .inner .copy * {
-    top: 0;
-  }
 }
 @media screen and (max-width: 720px) {
   #hero .inner .copy {
@@ -60,12 +60,11 @@ a {
   }
 }
 #hero .inner #header {
-  min-height: 15vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 #hero .inner #header .left {
   margin-left: 35px;
@@ -80,6 +79,9 @@ a {
 #hero .inner #header .right a {
   margin-right: 35px;
   display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #hero .inner #header .right a img {
   width: 250px;
@@ -115,13 +117,6 @@ a {
   flex-wrap: wrap;
   color: white;
 }
-#section-2 .left, #section-2 .right {
-  display: flex;
-  justify-content: center;
-}
-#section-2 .left {
-  width: 30%;
-}
 #section-2 .left img {
   max-width: 300px;
 }
@@ -137,7 +132,7 @@ a {
   margin-left: 35px;
   min-width: 350px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1040px) {
   #section-2 .right {
     text-align: center;
     width: inherit;
@@ -174,9 +169,7 @@ a {
   color: white;
 }
 #section-4 #inner .right {
-  width: 30%;
   z-index: 100;
-  display: flex;
 }
 #section-4 #inner .right img {
   max-width: 300px;
@@ -191,7 +184,7 @@ a {
   width: 50%;
   min-width: 350px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1040px) {
   #section-4 #inner .left {
     text-align: center;
     width: inherit;

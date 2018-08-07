@@ -91,6 +91,11 @@ a {
     display: none;
   }
 }
+@media screen and (max-width: 900px) {
+  #hero .inner #header {
+    position: inherit;
+  }
+}
 #hero .inner #small-store-btns {
   display: none;
 }

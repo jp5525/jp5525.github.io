@@ -105,6 +105,10 @@ a{
             }
         }
         }
+
+        @media screen and  (max-width: 900px) {
+            position: inherit;
+        }
     }
 
     #small-store-btns{

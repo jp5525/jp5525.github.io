@@ -1,0 +1,307 @@
+body {
+    font-family: 'Baloo', cursive;
+    margin: 0px;
+    background-color: #545454;
+    overflow-x: hidden;
+}
+
+#section-hero{
+    
+    height: 95vh;
+    background: linear-gradient(rgba(138,191, 150, .9), rgba(138,191, 150, .9)),  url(./hero.jpg);
+    background-position: bottom;
+    background-size: cover;
+
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 64px;
+    color: white;
+    
+    width: 105%;
+    margin-left: -2.5%;
+    margin-bottom: 35px;
+}
+
+#section-work{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#section-contact{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: white;
+    position: relative;
+    padding: 35px;
+    
+   
+    svg{
+        position: absolute;
+        top: 0;
+    }    
+
+    form{
+        z-index: 10;
+        padding: 35px;
+        text-align: center;
+        color: grey;
+
+        box-shadow: 2px 0 58px -4px rgba(0,0,0,.25);
+        border-radius: 5px;
+
+        input, textarea{
+            padding: 7px;
+            //border: none;
+            border: 1px grey solid;
+            background: transparent;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        button{
+            padding: 7px 15px;
+            border: 1px #545454 solid;
+            background: transparent;
+            margin: 10px;
+            background-color: #545454;
+            color: white;
+            font-size: 20px;
+            margin-top: 35px;
+        }
+        textarea{
+            width: 45%;
+        }
+
+        #email-subject{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    div{
+        padding: 35px;
+        margin-top: 20px;
+        h2{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 20; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 30%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+    
+    
+    
+    .modal-header {
+        //padding: 2px 16px;
+        //color: white;
+        h2{
+            padding: 15px;
+            background-color: #545454;
+            color: white;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 100%;
+        }
+            /* The Close Button */
+        .close {
+            color: grey;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 3px;
+            right: 10px
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+  
+    }
+ 
+    .modal-body {
+        padding: 2px 16px;
+        display: flex;
+        
+        .tech{
+            width: 60%;
+            font-size: 12px;
+            color: grey;
+        }
+
+        .copy{
+            padding: 0 25px;
+        }
+    
+    }
+    
+    .modal-footer {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+    }
+
+#section-1, #section-2, #section-3{
+    padding: 35px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #545454;
+}
+.project{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+    div{
+        width: 150px;
+        height: 150px;
+        padding: 35px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .4s;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        cursor: pointer;
+        background-color: white;
+        
+        div{
+            display: none
+        }
+        &:hover{
+            transform: scale(1.3);
+            
+            div{
+                background-color: rgba(0,0,0, .6);
+                font-size: 20px;
+                color: white;
+                display: inherit;
+            }
+        }
+        
+        
+    }
+}
+
+#kcc{
+    background-image: url(./kcc.jpg);
+}
+#hc{
+    background-image: url(./HC.png);  
+    background-color: white;       
+}
+#rco{
+    background-image: url(./RCO.png);         
+}
+#airfive{
+    background-image: url(./airfive.jpg);         
+}
+#carm-el{
+    background-image: url(./carmel.png);
+}
+#transnational{
+    background-image: url(./transnational.png);
+}
+#webs{
+    background-image: url(./webs.png);
+}
+#webs{
+    background-image: url(./webs.png);
+}
+#planner{
+    background-image: url(./planner-zapier.png);
+}
+#stripe{
+    background-image: url(./stripe.png);
+}
+#rock{
+    background-image: url(./rock-zapier.png);
+}
+#nochild{
+    background-image: url(./nochild.jpg);
+}
+
+.btn {
+    background-color: #545454; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    float: right;
+    transition: 0.3s;
+
+    &:hover{
+        opacity: .8;
+    }
+}
+
+#footer{
+    height: 50px;
+    background-color: rgba(138,191, 150, .9);
+}

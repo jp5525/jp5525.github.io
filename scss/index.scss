@@ -19,12 +19,18 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-size: 64px;
+    font-size: 50px;
     color: white;
     
     width: 105%;
     margin-left: -2.5%;
     margin-bottom: 35px;
+
+    div{
+        width: 100vw;
+        text-align: center;
+        line-height: 1.1;
+    }
 }
 
 #section-work{
@@ -32,6 +38,7 @@ body {
     color: white;
     justify-content: center;
     font-size: 30px;
+    text-align: center;
 }
 
 #section-contact{
@@ -127,7 +134,15 @@ body {
         -webkit-animation-name: animatetop;
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
-        animation-duration: 0.4s
+        animation-duration: 0.4s;
+
+        @media screen and  (max-width: 1300px) {
+            width: 50%;
+        }
+        @media screen and  (max-width: 750px) {
+            width: 85%;
+        }
+
     }
     
     /* Add Animation */

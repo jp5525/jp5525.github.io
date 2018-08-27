@@ -2,6 +2,9 @@ body {
   font-family: "Baloo", cursive;
   margin: 0px;
   background-color: #545454;
+}
+
+#main-wrapper {
   overflow-x: hidden;
 }
 
